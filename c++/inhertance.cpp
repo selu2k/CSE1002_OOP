@@ -28,9 +28,4 @@ void main(){
     obj.d1=5;// private
     obj.d3=3;
 }
-//checking if git is working
-//not working
-//still not working
-//maybe working
-//still not workinghttps://github.com/selu2k/CSE1002_OOP.git
-// now checking if its working
+//check complete
