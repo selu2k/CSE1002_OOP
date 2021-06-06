@@ -60,7 +60,7 @@ int main()
             ac.calc();
             cout << ac.added << endl;
 
-            if (ac.added - ac.with > 500)
+            if (ac.added - ac.with >= 500)
             {
                 cout << ac.updated;
             }
@@ -84,7 +84,7 @@ int main()
             cout << "1000" << endl;
             ac.calc();
             cout << ac.added << endl;
-            if (ac.added - ac.with > 1000)
+            if (ac.added - ac.with >= 1000)
             {
                 cout << ac.updated;
             }
@@ -96,7 +96,7 @@ int main()
     }
     else
     {
-        cout << "Invalid input";
+        cout << "Invalid Input";
     }
     return 1;
 }
