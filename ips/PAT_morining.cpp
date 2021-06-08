@@ -54,47 +54,52 @@ public:
 };
 void Teaching::get()
 {
+    Employee::get();
     cin >> Basic;
     cin >> TA;
     cin >> numDayspresent;
 };
 void PermanentNonTeaching::get()
 {
+    Employee::get();
     cin >> Basic;
     cin >> numDayspresent;
 };
 void ContractNonTeaching::get()
 {
+    Employee::get();
     cin >> numDayspresent;
 };
 void Teaching::calsal()
 {
 
     Salary = Basic + TA * numDayspresent + 0.30 * Basic + 0.80 * Basic;
-    cout << Salary;
 };
 void PermanentNonTeaching::calsal()
 {
 
     Salary = Basic + 50 * numDayspresent + 0.20 * Basic;
-    cout << Salary;
+
 };
 void ContractNonTeaching::calsal()
 {
     Salary = 500 * numDayspresent;
-    cout << Salary;
+
 };
 void Teaching::display()
 {
-       cout << Salary << endl;
+    Employee::display();
+    cout << Salary << endl;
 }
 void PermanentNonTeaching::display()
 {
-       cout << Salary << endl;
+    Employee::display();
+    cout << Salary << endl;
 }
 void ContractNonTeaching::display()
 {
-       cout << Salary << endl;
+    Employee::display();
+    cout << Salary << endl;
 }
 
 int main()
