@@ -1,4 +1,4 @@
-#include<iostream>
+/*#include<iostream>
 
 using namespace std;
 
@@ -70,4 +70,108 @@ int main(){
     c->area();
     c->surfaceArea();
     return 1;
+}*/
+#include <iostream>
+#define pi 3.14
+using namespace std;
+using std::string;
+
+class shape
+{
+protected:
+    float a;
+    float b;
+    float area;
+
+public:
+    void getdata()
+    {
+        cin >> a >> b;
+        area = 1.00;
+    }
+    virtual void Area() = 0;
+    void Surface_Area()
+    {
+        return;
+    }
+};
+
+class trapezoid : public shape
+{
+    float h;
+
+public:
+    void get()
+    {
+        cin >> h;
+    }
+    void Area()
+    {
+        area = (a + b) * h / 2;
+        cout << area << endl;
+    }
+};
+
+class ellipse : public shape
+{
+public:
+    void Area()
+    {
+        area = pi * a * b;
+        cout << area << endl;
+    }
+};
+class parallelogram : public shape
+{
+public:
+    void Area()
+    {
+        area = a * b;
+        cout << area << endl;
+    }
+};
+class cone : public shape
+{
+    float r;
+    float s;
+    float sa;
+
+public:
+    void get()
+    {
+        cin >> r >> s;
+    }
+    void Area()
+    {
+        area = pi * r * s;
+        cout << area << endl;
+    }
+    void Surface_Area()
+    {
+        sa = pi * r * r + pi * r * s;
+        cout << sa << endl;
+    }
+};
+
+int main()
+{
+    trapezoid t;
+    t.getdata();
+    t.get();
+
+    ellipse e;
+    e.getdata();
+
+    parallelogram p;
+    p.getdata();
+
+    cone c;
+    c.get();
+
+    t.Area();
+    e.Area();
+    p.Area();
+    c.Area();
+    c.Surface_Area();
+    return 0;
 }
