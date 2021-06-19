@@ -2,19 +2,23 @@
 #include <stdlib.h>
 
 int main(){
-    int i=79;
-    int *j;
-    j= &i;
-    int **k=&j;
-    int arr[]={1,2,3,4};
-    int *ptr=arr;
-    printf("%d\n",&arr[0]);
-    printf("%d\n",ptr);
-    printf("%d\n",arr);
-    printf("%d\n",*(ptr+1));
-    printf("%d\n",(ptr+1));
-    printf("%d\n",&*(ptr+1));
-    printf("%d\n",&arr[1]);
+    // int i=79;
+    // int *j;
+    // j= &i;
+    // int **k=&j;
+    // int arr[]={1,2,3,4};
+    // int *ptr=arr;
+    int * ptr2;
+    for(int i=0;i<3;i++){
+    scanf("%d",ptr2[i]);}
+    // printf("%d\n",&arr[0]);
+    // printf("%d\n",ptr);
+     printf("%d\n",ptr2[2]);
+    // printf("%d\n",arr);
+    // printf("%d\n",*(ptr+1));
+    // printf("%d\n",(ptr+1));
+    // printf("%d\n",&*(ptr+1));
+    // printf("%d\n",&arr[1]);
     // int *p;
     // // p=(int *)malloc(sizeof(int));
     // // scanf("%d",p);
