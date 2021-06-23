@@ -3,8 +3,8 @@
 using namespace std;
 
 int main(){
-    string s ="abcdef";
+    string s ="abc1ef";
     string a ="abcdef";
-    cout<<s[0];
+    cout<<s;
     return 1;
 }
